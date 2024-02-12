@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+body {
+    background-color: #ffcccc;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: #e03d7e;
+}
+p {
+    color: #660033;
+    font-size: 20px;
+}
+.heart {
+    margin-top: 150px;
+    color: #ff0066;
+    font-size: 50px;
+}
+
+.sunflower-container{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+z-index: 1;
+margin-top: 20%;
+}
+
+.sunflower {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    transform-origin: center bottom;
+    animation: tilt 3s infinite alternate;
+}
+
+@keyframes tilt {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+.pot{
+    height: 150px;
+width: 150px;
+position: absolute;
+
+margin-top: 82px;
+margin-left: 25px;
+}
