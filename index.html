@@ -4,23 +4,39 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <audio controls autopla loop hidden>
-        <source src="/assets/que-bendicion.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
+    <!-- Agregamos un botón de reproducción para que el usuario lo active -->
+  
     
     <div class="sunflower-container">
         <img class="sunflower" src="/assets/girasol1.png" alt="Un girasol para ti">
         <img class="pot" src="/assets/Maceta.png" alt="Una maceta para el girasol">
     </div>
-    <p class="heart"> </p>
+  <div class="heart">
     <h1>¡Feliz Día !</h1>
     <p>Titi, te quiero mucho ♥.</p>
+</div>
+<div class="wrapper">
+    <button id="playButton">
+      Pulsame! 
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+<!-- Mantenemos el reproductor de audio oculto -->
+<audio id="myAudio" controls hidden>
+    <source src="/assets/que-bendicion.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+    <!-- Incluimos el archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
